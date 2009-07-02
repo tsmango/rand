@@ -5,7 +5,7 @@ class Array
     if size == 1
       return self[Kernel.rand(self.length)]
     else
-      random_candidates = self.clone
+      random_candidates = self.collect
       size = self.length if size > self.length
       
       (0..(size - 1)).to_a.collect do
