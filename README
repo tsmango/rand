@@ -1,0 +1,33 @@
+Plugin Details
+--------------
+This plugin overrides the #rand method provided to Array by Rails' ActiveSupport.
+
+It can be used like the method it overrides to return a single value, without passing in a parameter, but if you specify an integer value, a random array of that size will be returned.
+
+Examples
+--------
+>> [0,1,2,3,4].rand
+=> 1
+
+>> [0,1,2,3,4].rand(2)
+=> [4, 0]
+
+>> [0,1,2,3,4].rand(2)
+=> [1, 2]
+
+>> [0,1,2,3,4].rand(10)
+=> [1, 4, 3, 0, 2]
+
+>> [0,1,2,3,4].rand(10)
+=> [2, 0, 1, 4, 3]
+
+>> [0,1,2,3,4].rand(-5)
+=> nil
+
+Authors
+-------
+Thomas Mango
+http://slicedsoftware.com
+
+Milan Iliev
+http://github.com/milaniliev
