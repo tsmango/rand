@@ -24,6 +24,10 @@ Examples
 >> [0,1,2,3,4].rand(-5)
 => nil
 
+License
+-------
+This plugin is available under the MIT license.
+
 Authors
 -------
 Thomas Mango
